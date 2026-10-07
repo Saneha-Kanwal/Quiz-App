@@ -1,0 +1,242 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+header {
+  background: #4a5568;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+main {
+  padding: 30px;
+}
+
+
+  .result-summary {
+    background: #f0f8ff;
+    border: 2px solid #4caf50;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+  }
+/* Button Styles */
+.btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 5px;
+}
+
+.btn-primary {
+  background: #4299e1;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #3182ce;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-secondary {
+  background: #ed8936;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background: #dd6b20;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-submit {
+  background: #48bb78;
+  color: white;
+}
+
+.btn-submit:hover {
+  background: #38a169;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-next {
+  background: #9f7aea;
+  color: white;
+  display: none; /* Keep existing JS functionality */
+}
+
+.btn-next:hover {
+  background: #805ad5;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-results {
+  background: #ed64a6;
+  color: white;
+}
+
+.btn-results:hover {
+  background: #d53f8c;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.controls {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Quiz Container Styles */
+.quiz-container {
+  background: #f7fafc;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.question-section h2 {
+  color: #2d3748;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  line-height: 1.4;
+}
+
+.options-section {
+  margin: 25px 0;
+}
+
+.option {
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.option:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.option input[type="radio"] {
+  margin-right: 10px;
+}
+
+.option label {
+  font-size: 1.1rem;
+  color: #4a5568;
+  cursor: pointer;
+  display: inline-block;
+  width: calc(100% - 30px);
+}
+
+/* Action Buttons */
+.action-buttons {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #e2e8f0;
+}
+
+/* Result Styles */
+.result-container {
+  background: #f7fafc;
+  border-radius: 10px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.result-container h2 {
+  color: #2d3748;
+  margin-bottom: 20px;
+}
+
+#resultDisplay {
+  font-size: 1.2rem;
+  color: #4a5568;
+  margin: 20px 0;
+  min-height: 50px;
+}
+
+/* Correct/Wrong Option Colors */
+.correctOption {
+  color: #48bb78 !important;
+  font-weight: bold;
+}
+
+.wrongOption {
+  color: #e53e3e !important;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    margin: 10px;
+  }
+  
+  header h1 {
+    font-size: 1.5rem;
+  }
+  
+  main {
+    padding: 20px 15px;
+  }
+  
+  .quiz-container,
+  .result-container {
+    padding: 15px;
+  }
+  
+  .btn {
+    width: 100%;
+    margin: 10px 0;
+  }
+  
+  .question-section h2 {
+    font-size: 1.2rem;
+  }
+  
+  .option label {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,63 @@
+ [
+    {
+      "id": 1,
+      "question": "Which planet is known as the Red Planet?",
+      "options": ["Earth", "Mars", "Jupiter", "Venus"],
+      "answer": "Mars"
+    },
+    {
+      "id": 2,
+      "question": "Who is the founder of Microsoft?",
+      "options": ["Elon Musk", "Bill Gates", "Steve Jobs", "Mark Zuckerberg"],
+      "answer": "Bill Gates"
+    },
+    {
+      "id": 3,
+      "question": "Which is the largest ocean in the world?",
+      "options": ["Atlantic Ocean", "Pacific Ocean", "Indian Ocean", "Arctic Ocean"],
+      "answer": "Pacific Ocean"
+    },
+    {
+      "id": 4,
+      "question": "What is the capital city of Pakistan?",
+      "options": ["Karachi", "Lahore", "Islamabad", "Peshawar"],
+      "answer": "Islamabad"
+    },
+    {
+      "id": 5,
+      "question": "Which language is used for Android app development?",
+      "options": ["Python", "Java", "C#", "Ruby"],
+      "answer": "Java"
+    },
+    {
+      "id": 6,
+      "question": "Which gas do humans need to breathe?",
+      "options": ["Carbon Dioxide", "Oxygen", "Nitrogen", "Helium"],
+      "answer": "Oxygen"
+    },
+    {
+      "id": 7,
+      "question": "How many continents are there in the world?",
+      "options": ["5", "6", "7", "8"],
+      "answer": "7"
+    },
+    {
+      "id": 8,
+      "question": "Which is the smallest prime number?",
+      "options": ["0", "1", "2", "3"],
+      "answer": "2"
+    },
+    {
+      "id": 9,
+      "question": "Who painted the Mona Lisa?",
+      "options": ["Leonardo da Vinci", "Pablo Picasso", "Michelangelo", "Van Gogh"],
+      "answer": "Leonardo da Vinci"
+    },
+    {
+      "id": 10,
+      "question": "What is the chemical formula of water?",
+      "options": ["H2", "O2", "H2O", "CO2"],
+      "answer": "H2O"
+    }
+  ]
+

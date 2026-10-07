@@ -1,0 +1,57 @@
+ik object ke array ko simple array ke trha print nhe krvaty ha like ${}, qk ky fir vo ik string ke trha print ho jate ha   like [object object]
+
+
+HOW CAN I BUILT LOGIC ?
+3. Logic Building Exercise ka Asal Matlab
+Jab aap javascript.info ke tasks solve karte ho:
+Mind me pehle socho "is problem ko tod kr step by step kaisay solve karun?" (human logic)
+Fir socho "in steps ko implement karne k liye JS ke kaunse concepts fit hain?" (coding tools)
+Fir code likho aur run kro (execution aur debugging).
+Yeh cycle repeat hota hai → isi se logic build hota hai.
+SUMMARY 
+Logic = brain ki ability problem ko todne aur solve karne ki.
+Code = us logic ka machine-readable version.
+JS concepts = tools to express that logic.
+Toh jab tum task solve kroge, dimaag me pehle steps imagine kro (pen-paper ya mentally), phir JS se express kro. Yeh hi asal logic building hai ✅.
+
+
+
+
+    document.getElementById("submit").addEventListener("click", simpleFunc);   // in this case only reference of that function is given and onclick listener is attached on submit btn, now when onclick event done than this function call, thats why i am not using () brakets beacuse it call unction without waiting its event
+    // but we cannnot use this method in case of parametrized functions like button.addEventListener("click", secondFunc(param1, param2));   becauase this has function calling brackets () to write parameter in it, 
+    // the correct way to write parametrized function in another function on any event listener i use this method
+     document.getElementById("myBtn").onclick = function () {
+    child(x, y);
+  };     OR    document.getElementById("myBtn").onclick = () => child(x, y);   yah function ka reference dyta ha and than fir btn click pr chalta ha 
+
+1.  document.getElementById("myBtn").onclick = function () {
+    child(x, y);
+  };
+2. document.getElementById("myBtn").onclick = () => child(x, y);
+3. button.addEventListener("click", function() {
+   secondFunc(param1, param2);
+});
+// all of these has small differences  
+Lekin unmein chhote-chhote differences hote hain — syntax, scope, aur this binding ke perspective se.
+
+
+  
+         <p>This is question of quiz</p>
+       <br>
+       <form>
+        <input type="radio" id="option1" value="option A get from json"/>
+        <label for="option1">option A get from json</label>
+           </body>
+         <input type="radio" id="option2" value="option B get from json"/>
+           <label for="option2">option B get from json</label>
+             </br>
+          <input type="radio" id="option3" value="option C get from json"/>
+            <label for="option3">option C get from json</label>
+              </br>
+           <input type="radio" id="option4" value="option D get from json"/>
+             <label for="option4">option D get from json</label>
+               </br>
+            </br>
+                <input type="submit" value="Submit" />
+           </form> 
+        

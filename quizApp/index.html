@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> -->
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Quiz Application</h1>
+    </header>
+
+    <main>
+      <div class="controls">
+        <button id="startQuizBtn" class="btn btn-primary">Start Quiz</button>
+        <button id="restartQuiz" class="btn btn-secondary">Restart Quiz</button>
+      </div>
+
+      <div id="quizContainer" class="quiz-container">
+        <div class="question-section">
+          <h2 id="questionData">This is question of quiz</h2>
+        </div>
+
+        <div class="options-section">
+          <div class="option">
+            <input type="radio" id="option1" name="name1" value="option A get from json" />
+            <label for="option1" id="label1">option A get from json</label>
+          </div>
+
+          <div class="option">
+            <input type="radio" id="option2" name="name1" value="option B get from json" />
+            <label for="option2" id="label2">option B get from json</label>
+          </div>
+
+          <div class="option">
+            <input type="radio" id="option3" name="name1" value="option C get from json" />
+            <label for="option3" id="label3">option C get from json</label>
+          </div>
+
+          <div class="option">
+            <input type="radio" id="option4" name="name1" value="option D get from json" />
+            <label for="option4" id="label4">option D get from json</label>
+          </div>
+        </div>
+
+        <div class="action-buttons">
+          <button id="submit" class="btn btn-submit">Submit Answer</button>
+          <button id="nextQuestionBtn" class="btn btn-next">Next Question</button>
+        </div>
+      </div>
+
+      <div id="resultContainer" class="result-container">
+        <h2>Quiz Results</h2>
+        <div id="result-summary" class="result-summary" style="display:none;">
+          <h2>Quiz Summary</h2>
+          <p id="total-questions"></p>
+          <p id="attempted"></p>
+          <p id="correct"></p>
+          <p id="wrong"></p>
+        </div>
+        <button id="resultBtn" class="btn btn-results">End Quiz & Show Result Details</button>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
+<!-- 
+<div class="container" id="resultContainer">
+  <div id="result-summary" class="result-summary" style="display:none;">
+    <h2>Quiz Summary</h2>
+    <p id="total-questions"></p>
+    <p id="attempted"></p>
+    <p id="correct"></p>
+    <p id="wrong"></p>
+  </div>
+</div> -->
